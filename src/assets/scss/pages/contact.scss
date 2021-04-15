@@ -1,0 +1,13 @@
+// CSS POUR CONTACTER PAGE A CREER
+.home{
+    @apply h-screen bg-green;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .home{
+        @apply grid-cols-2;
+    }
+}
+

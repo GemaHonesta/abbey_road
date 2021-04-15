@@ -1,0 +1,11 @@
+/* ./your-css-folder/styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./pages/home.scss";
+
+@import "default.scss";
+@import "fonts.scss";
+@import "form.scss";
+@import "ui.scss";

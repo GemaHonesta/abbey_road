@@ -1,0 +1,71 @@
+.home{
+    @apply h-screen;
+
+    & p {
+    }
+}
+.choice{
+    @apply h-screen	grid;
+}
+
+
+.plaisir{
+    @apply text-2xl text-white grid content-center justify-center;
+    background: url(https://images.pexels.com/photos/3771836/pexels-photo-3771836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center/cover no-repeat;
+    font-family: 'Spectral', serif;
+}
+
+.titre {
+    & > p:nth-child(2){
+        display: none;
+        color: rgb(192, 233, 8);
+    }
+
+    &:hover > p:nth-child(2){
+        display: block;
+    }
+
+    &:hover > p:nth-child(1){
+        display: none;
+    }
+}
+
+.sport{
+    @apply text-2xl text-white grid content-center justify-center;
+    background: url(https://images.unsplash.com/photo-1541625810516-44f1ce894bcd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80) center center/cover no-repeat;
+    font-family: 'Spectral', serif;
+}
+
+.logo-container{
+width: 200px;
+height: 200px;
+text-align: center;
+}
+
+.logo{
+    position: absolute;
+    height: 100vh;
+    justify-self: center;
+    align-self: center;
+
+    display: inline-block
+    vertical-align: middle;
+
+    @apply grid content-center justify-center;
+    & > img {
+    width: 100px;
+    }
+}
+
+.helper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .home{
+        @apply grid-cols-2;
+    }
+}
+
