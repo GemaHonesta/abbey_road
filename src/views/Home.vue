@@ -14,11 +14,11 @@
         </div>
       </div>
       <!-- LOGO STARTS -->
-      <div class="logo-container">
+   <!--  <div class="logo-container">
         <div class="logo">
           <img src="/images/logo/abbeyroad-02.png" alt="logo">
         </div>
-      </div>
+      </div> -->
       <!-- LOGO ENDS -->
   </div>
 </div>

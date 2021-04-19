@@ -6,9 +6,9 @@
         <ol><router-link to="/payment">Tarifs</router-link></ol>
         <ol><router-link to="/contact">Contact</router-link></ol>
       </ul>
-     <button>
-      <i  class="material-icon">Menu</i>
-     </button>
+    <!-- <button>
+     <i  class="material-icon">Menu</i>
+     </button> -->
     </div>
 </template>
 
