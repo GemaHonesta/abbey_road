@@ -8,6 +8,7 @@ import Contact from '../views/Contact.vue'
 import Payment from '../views/Payment.vue'
 import Description from '../views/Description.vue'
 import Map from '../views/Map.vue'
+import DescriptionPage from '../views/DescriptionPage'
 
 Vue.use(VueRouter)
 
@@ -43,7 +44,15 @@ const routes = [
      meta: {
        title: 'Description'
      }
-   }, 
+   },
+   {
+    path: '/descriptionpage',
+    name: 'DescriptionPage',
+    component: DescriptionPage,
+    meta: {
+      title: 'DescriptionPage'
+    }
+  }, 
    {
      path: '/map',
      name: 'Map',
