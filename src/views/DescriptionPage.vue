@@ -33,6 +33,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea a pariatur tempore aspernatur dolore blanditiis perspiciatis deleniti suscipit non dicta, repudiandae iure explicabo ratione earum repellat commodi, atque eos illo deserunt eveniet laboriosam? Labore cum sit, a corrupti tempore cumque incidunt laborum quam quae tenetur rem. Facere eveniet in commodi cum perspiciatis officia saepe a doloribus perferendis enim, nesciunt, ab inventore magnam ut, asperiores beatae ipsam sed illum adipisci quas sequi obcaecati repudiandae tempora rerum! Quia debitis id ut maiores odio doloribus accusantium in error molestiae cumque, repellendus ex eius iure illum vero autem assumenda atque maxime distinctio! Consequatur hic blanditiis, distinctio explicabo, magni quo, ipsa quis veniam nisi illum inventore exercitationem sint porro. Eaque eum nisi magnam illo vel!</p>
         </div>
     </div>
+    <div class="button">
+        <router-link :to="{name: 'Payment'}">
+            <a>OUI, JE VEUX !</a>
+        </router-link>
+    </div>
   </div>
 </template>
 
@@ -55,6 +60,7 @@ export default {
     .content{
         width: 90%;
         margin: auto;
+        padding-bottom: 50px;
     }
     .content > h1{
         text-align: center;
@@ -98,6 +104,21 @@ export default {
         margin-left: 30px;
         margin-top: 10px;
         font-weight: 600;
+    }
+
+    .button{
+        text-align: center;
+    }
+
+    .button:hover{
+        cursor: pointer;
+    }
+
+    .button a{
+        background-color: blue;
+        color: white;
+        padding: 10px 50px;
+        font-size: 18px;
     }
 
 </style>
