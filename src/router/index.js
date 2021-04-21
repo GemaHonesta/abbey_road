@@ -10,6 +10,7 @@ import Description from '../views/Description.vue'
 import Map from '../views/Map.vue'
 import DescriptionPage from '../views/DescriptionPage'
 import PricePage from '../views/PricePage'
+import PaymentPage from '../views/PaymentPage'
 
 Vue.use(VueRouter)
 
@@ -60,6 +61,14 @@ const routes = [
     component: PricePage,
     meta: {
       title: 'PricePage'
+    }
+  },
+  {
+    path: '/paymentpage',
+    name: 'PaymentPage',
+    component: PaymentPage,
+    meta: {
+      title: 'PaymentPage'
     }
   },
    {

@@ -163,7 +163,7 @@ export default {
 }
 </script>
 
-<style>
+<style scopped>
     .content{
         width: 90%;
         margin: auto;
@@ -213,7 +213,7 @@ export default {
     }
 
     .fa-check{
-        color: green;
+        color: #3abc94;
     }
 
     .price{
