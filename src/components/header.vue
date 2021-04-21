@@ -99,9 +99,11 @@ export default {
     display: flex;
     flex-direction: column;
     width: 200px;
-    float: right;
     margin-right: 5%;
     gap: 2px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
   }
 
   .hamburger-links>a{
@@ -121,12 +123,12 @@ export default {
     display: flex;
     flex-direction: column;
     width: 200px;
-    float: right;
     margin-right: 5%;
     gap: 5px;
     align-items: flex-end;
-    position: relative;
-    top: -15px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
   }
 
   .flag:hover{
