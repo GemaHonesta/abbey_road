@@ -9,6 +9,7 @@ import Payment from '../views/Payment.vue'
 import Description from '../views/Description.vue'
 import Map from '../views/Map.vue'
 import DescriptionPage from '../views/DescriptionPage'
+import PricePage from '../views/PricePage'
 
 Vue.use(VueRouter)
 
@@ -52,7 +53,15 @@ const routes = [
     meta: {
       title: 'DescriptionPage'
     }
-  }, 
+  },
+  {
+    path: '/pricepage',
+    name: 'PricePage',
+    component: PricePage,
+    meta: {
+      title: 'PricePage'
+    }
+  },
    {
      path: '/map',
      name: 'Map',
