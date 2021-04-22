@@ -3,10 +3,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
-import Payment from '../views/Payment.vue'
-import Description from '../views/Description.vue'
+// import Payment from '../views/Payment.vue'
+// import Description from '../views/Description.vue'
 import Map from '../views/Map.vue'
 import DescriptionPage from '../views/DescriptionPage'
 import PricePage from '../views/PricePage'
@@ -16,10 +16,18 @@ import HomePage from '../views/HomePage'
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: Home,
+  //   meta: {
+  //     title: 'Accueil'
+  //   }
+  // },
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: HomePage,
     meta: {
       title: 'Accueil'
     }
@@ -32,22 +40,22 @@ const routes = [
       title: 'Contact'
     }
   },
-   {
-     path: '/payment',
-     name: 'Payment',
-     component: Payment,
-     meta: {
-      title: 'Payement'
-    }
-   }, 
-   {
-     path: '/description',
-     name: 'Description',
-     component: Description,
-     meta: {
-       title: 'Description'
-     }
-   },
+  //  {
+  //    path: '/payment',
+  //    name: 'Payment',
+  //    component: Payment,
+  //    meta: {
+  //     title: 'Payement'
+  //   }
+  //  }, 
+  //  {
+  //    path: '/description',
+  //    name: 'Description',
+  //    component: Description,
+  //    meta: {
+  //      title: 'Description'
+  //    }
+  //  },
    {
     path: '/descriptionpage',
     name: 'DescriptionPage',

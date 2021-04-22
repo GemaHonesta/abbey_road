@@ -9,7 +9,7 @@
                   <button @mouseenter="toggleFirstBtn" @mouseleave="toggleFirstBtn">
                       <router-link :to="{name: 'DescriptionPage'}">
                           <a v-if="firstBtn">Experience Plaisir</a>
-                          <a v-else>Chillout Biking</a>
+                          <a v-else>Chill-out Bikking</a>
                       </router-link>
                   </button>
               </div>
@@ -19,7 +19,7 @@
                   <button @mouseenter="toggleSecondBtn" @mouseleave="toggleSecondBtn">
                         <router-link :to="{name: 'DescriptionPage'}">
                             <a v-if="secondBtn">Experience Sport</a>
-                            <a v-else>Hardcore Biking</a>
+                            <a v-else>Hardcore Bikking</a>
                         </router-link>
                   </button>
               </div>
