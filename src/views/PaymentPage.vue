@@ -142,7 +142,8 @@ export default {
     }
     .price-btn{
         text-align: center;
-        padding: 10px 0;
+        width: fit-content;
+        padding: 10px;
         background-color: #c4c4c4;
         font-size: 16px;
         font-weight: 600;
@@ -156,7 +157,6 @@ export default {
         background-color: #c4c4c4;
         padding: 5px 0 30px 7px;
         position: absolute;
-        bottom: 0;
         width: 90%;
     }
     .conditions>.heading{
