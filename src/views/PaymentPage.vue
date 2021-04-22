@@ -111,7 +111,7 @@ export default {
     .inputs-container>input{
         width: 70%;
         height: 42px;
-        margin: 5px 0;
+        margin: 15px 0;
         background: #f8f4f4;
         outline: none;
         border: 3px solid #ece9e9;
@@ -134,6 +134,8 @@ export default {
         display: flex;
         align-items: center;
         gap: 10px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .fa-check{
         color: #3abc94;

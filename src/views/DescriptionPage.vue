@@ -14,10 +14,10 @@
                     <a class="next" @click="img1 = !img1">&#10095;</a>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur nisi tempora expedita pariatur voluptates ratione officia, saepe a deleniti eaque facere sint esse aliquid ducimus fugit dignissimos ad delectus optio? Quod et, ducimus neque, suscipit ratione dolorum reiciendis quo iste impedit odio nisi. Dolorem quam nihil alias non unde, ut veniam placeat delectus? Ut laudantium minus doloribus repellat provident beatae aspernatur saepe illo in, eius eveniet impedit vel culpa est assumenda deserunt blanditiis ex voluptatem maxime repellendus non porro nesciunt? Omnis aspernatur laborum quidem fugit ipsa quaerat aperiam placeat, facere, enim delectus vel quis iusto nihil deserunt? Qui, iste.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa beatae nisi ullam distinctio laboriosam labore veritatis. Quidem aliquid distinctio nobis. Ab eveniet iusto inventore maiores doloribus facilis dolorem, nobis dolores deleniti sequi repellat quae distinctio cupiditate ratione perferendis quisquam iure labore atque optio! Deserunt assumenda quaerat, aliquid accusamus magnam ex, quasi consequatur illo laborum, nostrum aut sit? Nemo, architecto a. Hic, optio autem consequatur modi rem dicta repellat tempore eos?</p>
         </div>
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, odit soluta. Odit ullam vero in vel eaque beatae amet, nisi harum placeat delectus sed perferendis eius, et impedit dolore laboriosam hic quasi? Quia perspiciatis molestiae dicta, quibusdam blanditiis, nulla veritatis eveniet sit sint nesciunt in culpa laudantium odit vel aperiam illum eos beatae, at atque quaerat obcaecati rerum veniam? Velit blanditiis itaque porro hic odit rem error quam, iure libero cum at eos fugiat doloremque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic omnis alias, dolorem reprehenderit sit officiis totam? Ipsa assumenda a magnam laudantium veritatis neque ratione modi. Numquam minima quidem quasi natus exercitationem ut officia debitis, delectus deleniti ullam maxime, facilis ex optio aperiam at error impedit doloremque, cum dicta omnis! Et qui vero animi in repellat numquam nemo. Explicabo, atque, soluta, nostrum praesentium perferendis voluptate labore blanditiis voluptatem dolorem voluptatibus alias autem quidem. Quae provident veniam unde ipsam aut.</p>
             <div class="image-container">
                 <img src="/images/5.auberge_de_l_Abbaye.jpg" alt="" v-show="img2">
                 <img src="/images/1.gare_charleroi.jpg" alt="" v-show="!img2">
@@ -42,7 +42,7 @@
                     <a class="next" @click="img3 = !img3">&#10095;</a>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea a pariatur tempore aspernatur dolore blanditiis perspiciatis deleniti suscipit non dicta, repudiandae iure explicabo ratione earum repellat commodi, atque eos illo deserunt eveniet laboriosam? Labore cum sit, a corrupti tempore cumque incidunt laborum quam quae tenetur rem. Facere eveniet in commodi cum perspiciatis officia saepe a doloribus perferendis enim, nesciunt, ab inventore magnam ut, asperiores beatae ipsam sed illum adipisci quas sequi obcaecati repudiandae tempora rerum! Quia debitis id ut maiores odio doloribus accusantium in error molestiae cumque, repellendus ex eius iure illum vero autem assumenda atque maxime distinctio! Consequatur hic blanditiis, distinctio explicabo, magni quo, ipsa quis veniam nisi illum inventore exercitationem sint porro. Eaque eum nisi magnam illo vel!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur unde perspiciatis, quis nesciunt quas aspernatur esse harum! Quisquam eius tempora reiciendis perferendis molestiae, aliquam ullam illo distinctio incidunt ab voluptatum labore quae asperiores at numquam impedit. Minus cum velit iusto similique pariatur error illo, atque molestias repellendus harum quod quo ab dolorum nisi maxime veritatis nihil odit labore tempore eaque sequi eligendi? Magni quos porro molestiae incidunt. Natus, distinctio aut.</p>
         </div>
     </div>
     <div class="button">
@@ -86,25 +86,30 @@ export default {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr 1fr 1fr;
-        row-gap: 8px;
+        row-gap: 15px;
         padding-bottom: 30px;
     }
     .description-content img{
         width: 380px;
+        height: 100%;
     }
 
     .description-content>div:nth-child(odd){
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 380px 2fr;
+        grid-template-columns: 380px 380px;
         position: relative;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
     .description-content>div:nth-child(even){
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns:2fr 380px;
+        grid-template-columns:380px 380px;
         position: relative;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
     .description-content>div:nth-child(even) p{
@@ -113,7 +118,6 @@ export default {
 
     .caption{
         position: absolute;
-        bottom: 0px;
         font-weight: 700;
         color: #dedede;
         background-color: rgba(0, 0, 0, 0.5);
@@ -131,6 +135,7 @@ export default {
 
     .button{
         text-align: center;
+        margin-top: 30px;
     }
 
     .button:hover{

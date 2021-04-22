@@ -11,6 +11,7 @@ import Map from '../views/Map.vue'
 import DescriptionPage from '../views/DescriptionPage'
 import PricePage from '../views/PricePage'
 import PaymentPage from '../views/PaymentPage'
+import HomePage from '../views/HomePage'
 
 Vue.use(VueRouter)
 
@@ -69,6 +70,14 @@ const routes = [
     component: PaymentPage,
     meta: {
       title: 'PaymentPage'
+    }
+  },
+  {
+    path: '/homepage',
+    name: 'HomePage',
+    component: HomePage,
+    meta: {
+      title: 'HomePage'
     }
   },
    {

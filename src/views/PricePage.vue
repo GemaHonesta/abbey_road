@@ -182,12 +182,14 @@ export default {
 
     .packages-container{
         display: flex;
-        justify-content: space-evenly;
+        width: fit-content;
+        gap: 30px;
+        margin: auto;
         margin-top: 30px;
     }
 
     .package{
-        width: 500px;
+        width: 400px;
     }
 
     .package>.heading{
@@ -230,6 +232,7 @@ export default {
     }
 
     .additional-packages>.package{
+        margin: auto;
         margin-bottom: 40px;
     }
 
