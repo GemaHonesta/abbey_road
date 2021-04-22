@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <!-- <header-bar v-if="this.$route.name != 'Home'" /> -->
-    <header-bar />
+    <header-bar v-if="this.$route.name !== 'HomePage'"/>
     <router-view/>
     <!-- <footer-bar /> -->
   </div>
