@@ -6,6 +6,7 @@
       <div class="home-content">
           <div class="top-section">
               <div>
+                  <!-- Text on the button changes when mouse enters/leaves the button. this toggling is done by toggleFirstBtn -->
                   <button @mouseenter="toggleFirstBtn" @mouseleave="toggleFirstBtn">
                       <router-link :to="{name: 'DescriptionPage'}">
                           <a v-if="firstBtn">Experience Plaisir</a>

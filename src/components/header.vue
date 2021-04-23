@@ -28,17 +28,12 @@
       <a href="#">Contact</a>
     </div>
     <div class="flag-container" v-if="showFlag">
+      <!-- Only those flags are shown in dropdown which are not currently displayed on the header -->
       <img src="/images/icons/england.png" v-if="!flagSrc.includes('england')" class="flag" @click="selectFlag">
       <img src="/images/icons/netherland.png" v-if="!flagSrc.includes('netherland')" class="flag" @click="selectFlag">
       <img src="/images/icons/france.png" v-if="!flagSrc.includes('france')" class="flag" @click="selectFlag">
     </div>
   </div>
-  <ul hidden>
-    <ol><router-link to="/">Accueil</router-link></ol>
-    <ol><router-link to="/description">Parcours</router-link></ol>
-    <ol><router-link to="/payment">Tarifs</router-link></ol>
-    <ol><router-link to="/contact">Contact</router-link></ol>
-  </ul>
   <!-- <button>
   <i  class="material-icon">Menu</i>
   </button>  -->
@@ -54,7 +49,7 @@ export default {
     return {
       showHamburger: false,
       showFlag: false,
-      flagSrc: '/images/icons/england.png'
+      flagSrc: '/images/icons/england.png'    //this shows which flag is currently visible
     }
   },
   props: {
@@ -63,15 +58,15 @@ export default {
   methods: {
     toggleHamburger(){
       this.showHamburger = !this.showHamburger
-      this.showFlag = false
+      this.showFlag = false   //in case if hamburger or flag is clicked, other component hides
     },
     toggleFlag(){
       this.showFlag = !this.showFlag
-      this.showHamburger = false
+      this.showHamburger = false    //in case if hamburger or flag is clicked, other component hides
     },
     selectFlag(e){
       //console.log(e.target.attributes.src.value)
-      let selectedFlag = e.target.attributes.src.value
+      let selectedFlag = e.target.attributes.src.value      //get the image src attribute and select that flag
       this.flagSrc = selectedFlag
       this.showFlag = false
     }

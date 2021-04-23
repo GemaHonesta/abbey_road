@@ -58,6 +58,7 @@ export default {
     name: 'DescriptionPage',
     data(){
         return {
+            // this is a 2 image carousel, so either first image is displayed or the second, depending on the flag
             img1: true,
             img2: true,
             img3: true
@@ -94,7 +95,8 @@ export default {
         height: 100%;
     }
 
-    .description-content>div:nth-child(odd){
+    
+    .description-content>div{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 380px 380px;
@@ -103,15 +105,7 @@ export default {
         margin-bottom: 20px;
     }
 
-    .description-content>div:nth-child(even){
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns:380px 380px;
-        position: relative;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
+    /* Following style only applies to even row of the description page (i.e the row containing second image) */
     .description-content>div:nth-child(even) p{
         margin-left: 0;
     }
@@ -188,12 +182,6 @@ export default {
         }
     }
 
-    /* @media only screen and (max-width: 815px){
-        .descriptionpage-container{
-            width: 90%;
-        }
-    } */
-
     @media only screen and (max-width: 818px){
         .descriptionpage-container{
             width: 98%;
@@ -217,9 +205,6 @@ export default {
         .caption{
             width: 280px;
         }
-        /* .prev, .next{
-            top: 35%
-        } */
 
         .next:not(.right){
             left: 238px;

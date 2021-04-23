@@ -60,6 +60,7 @@ export default {
             date: '',
             cvv: '',
             features: [
+                // features is assumed to be the data coming from the backend of the website which can be changed by the admin panel
                 {id: 1, name: 'Formule Experience Plaisir'},
                 {id: 2, name: 'Depart 15/08/2021, Retour 22/08/2021'},
                 {id: 3, name: 'Hebergement'},
@@ -124,9 +125,7 @@ export default {
         outline: none;
     }
 
-    /* .right{
-        background-color: grey;
-    } */
+    /* Following style applies to both headings of left and right */
     .right>.heading, .left>.heading{
         font-size: 18px;
         font-weight: 700;
@@ -169,6 +168,8 @@ export default {
     .conditions>.description{
         font-size: 14px;
     }
+
+    /* Media querries for smaller screens */
 
     @media only screen and (max-width: 986px){
         .payment-content{

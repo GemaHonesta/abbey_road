@@ -6,6 +6,7 @@
         </div>
         <div class="price-details">
             <div class="packages-container">
+                <!-- It was assumed that the packages are edited/created and deleted by the admins of the site. So, I have written the packages as array of objects coming from backend -->
                 <div class="package" v-for="pack in packages" :key="pack.id">
                     <p class="heading">{{pack.name}}</p>
                     <div>
@@ -321,6 +322,7 @@ export default {
             width: 90%;
         }
 
+        /* This style applies to all the inputs inside the class date-select (this style is for the top calender input) */
         .date-select input{
             width: auto;
         }
