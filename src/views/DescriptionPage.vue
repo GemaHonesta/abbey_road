@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="descriptionpage-container">
     <h1>Decouvrez Les Secrets De Notre Terroir</h1>
     <div class="description-content">
         <div>
@@ -69,12 +69,12 @@ export default {
 </script>
 
 <style scopped>
-    .content{
+    .descriptionpage-container{
         width: 90%;
         margin: auto;
         padding-bottom: 50px;
     }
-    .content > h1{
+    .descriptionpage-container > h1{
         text-align: center;
         font-size: 22px;
         font-weight: 700;
@@ -142,7 +142,7 @@ export default {
         cursor: pointer;
     }
 
-    .button a{
+    .button>a{
         background-color: blue;
         color: white;
         padding: 10px 50px;
@@ -179,6 +179,19 @@ export default {
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
+    }
+
+    /*media querries for smaller screens */
+    @media only screen and (max-width: 910px){
+        .descriptionpage-container{
+            width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 815px){
+        .descriptionpage-container{
+            width: 90%;
+        }
     }
 
 </style>

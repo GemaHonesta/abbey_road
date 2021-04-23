@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="payment-content">
       <div class="payment-info">
           <div class="left">
             <p class="heading">Vos Informations:</p>
@@ -76,9 +76,11 @@ export default {
 </script>
 
 <style scopped>
-    .content{
+    .payment-content{
         padding-bottom: 50px;
         margin-top: 35px;
+        width: 65%;
+        margin: auto;
     }
     .payment-info{
         display: grid;
@@ -157,7 +159,7 @@ export default {
         background-color: #c4c4c4;
         padding: 5px 0 30px 7px;
         position: absolute;
-        width: 90%;
+        width: 65%;
     }
     .conditions>.heading{
         font-size: 18px;
@@ -166,5 +168,34 @@ export default {
     }
     .conditions>.description{
         font-size: 14px;
+    }
+
+    @media only screen and (max-width: 986px){
+        .payment-content{
+            width: 90%;
+        }
+        .conditions{
+            width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 630px){
+        .inputs-container>input{
+            font-size: 14px;
+            width: 90%;
+        }
+
+        .features>span{
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 570px){
+        .right>.heading, .left>.heading{
+            font-size: 16px;
+        }
+        .payment-info{
+            gap: 15px;
+        }
     }
 </style>
