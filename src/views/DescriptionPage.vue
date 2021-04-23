@@ -188,9 +188,53 @@ export default {
         }
     }
 
-    @media only screen and (max-width: 815px){
+    /* @media only screen and (max-width: 815px){
         .descriptionpage-container{
             width: 90%;
+        }
+    } */
+
+    @media only screen and (max-width: 818px){
+        .descriptionpage-container{
+            width: 98%;
+        }
+    }
+
+    @media only screen and (max-width: 785px){
+        .description-content{
+            grid-template-columns: 100%;
+        }
+        .description-content>div:nth-child(odd){
+            grid-template-columns: 280px auto;
+        }
+        .description-content>div:nth-child(even){
+            grid-template-columns: auto 280px;
+        }
+        .description-content img{
+            width: 280px;
+            height: 100%;
+        }
+        .caption{
+            width: 280px;
+        }
+        /* .prev, .next{
+            top: 35%
+        } */
+
+        .next:not(.right){
+            left: 238px;
+        }
+    }
+
+    @media only screen and (max-width: 614px){
+        .description-content p{
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 528px){
+        .description-content {
+            row-gap: 35px;
         }
     }
 
