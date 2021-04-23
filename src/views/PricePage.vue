@@ -293,6 +293,9 @@ export default {
         .price-content{
             width: 100%;
         }
+        .package{
+            width: auto;
+        }
     }
 
     @media only screen and (max-width: 490px){
