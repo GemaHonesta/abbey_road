@@ -44,6 +44,14 @@
                             <input type="checkbox" v-model="family">
                             <p>-15% par personne</p>
                         </div>
+                        <div class="counter-section">
+                            <div class="counter-controls">
+                                <p class="btn" @click="decreaseAdultes"><i class="fas fa-minus"></i></p>
+                                <p class="counter">{{adultes}}</p>
+                                <p class="btn" @click="increaseAdultes"><i class="fas fa-plus"></i></p>
+                            </div>
+                            <p>Nombre d'adultes</p>
+                        </div>
                     </div>
                 </div>
                 <div class="package">
@@ -95,6 +103,7 @@ export default {
             dateTime: null,
             enfant: 0,
             chambre: 0,
+            adultes: 0,
             family: false,
             sans: false,
             avec: false,
@@ -151,6 +160,14 @@ export default {
         },
         increaseChambre(){
             this.chambre ++
+        },
+        decreaseAdultes(){
+            if (this.adultes > 0){
+                this.adultes -= 1
+            }
+        },
+        increaseAdultes(){
+            this.adultes ++
         }
     }
 }
@@ -266,6 +283,7 @@ export default {
         display: flex;
         align-items: center;
         gap: 10px;
+        margin-bottom: 10px;
     }
     .submit-btn{
         text-align: center;

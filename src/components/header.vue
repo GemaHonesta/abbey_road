@@ -148,4 +148,10 @@ export default {
     width: 32px;
     height: 22px;
   }
+
+  @media only screen and (max-width: 611px){
+    .logo-div>img{
+      height: 60px;
+    }
+  }
 </style>
