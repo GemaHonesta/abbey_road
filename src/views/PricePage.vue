@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="price-content">
         <div class="date-select">
             <h3>PERIODE DE DEPART: </h3>
             <date-picker v-model="dateTime" valueType="format" :range="true" ></date-picker>
@@ -157,7 +157,7 @@ export default {
 </script>
 
 <style scopped>
-    .content{
+    .price-content{
         width: 65%;
         margin: auto;
         padding-bottom: 50px;
@@ -275,5 +275,40 @@ export default {
         color: white;
         padding: 10px 50px;
         font-size: 18px;
+    }
+
+    @media only screen and (max-width: 986px){
+        .price-details{
+            width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 778px){
+        .price-content{
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 611px){
+        .price-content{
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 490px){
+        .date-select{
+            width: 90%;
+        }
+
+        .date-select input{
+            width: auto;
+        }
+        .price-content{
+            width: 100%;
+        }
+
+        .package>.heading{
+            font-size: 18px;
+        }
     }
 </style>
