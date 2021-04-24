@@ -21,11 +21,11 @@
       </div>
     </div>
     <div class="hamburger-links" v-if="showHamburger">
-      <a href="#">Accueil</a>
-      <a href="#">Parcours</a>
-      <a href="#">Tarifs</a>
-      <a href="#">Gallerie</a>
-      <a href="#">Contact</a>
+      <router-link :to="{name: 'Home'}">Accueil</router-link>
+      <router-link :to="{name: 'Map'}">Parcours</router-link>
+      <router-link :to="{name: 'PricePage'}">Tarifs</router-link>
+      <router-link :to="{name: 'DescriptionPage'}">Description</router-link>
+      <router-link :to="{name: 'Contact'}">Contact</router-link>
     </div>
     <div class="flag-container" v-if="showFlag">
       <!-- Only those flags are shown in dropdown which are not currently displayed on the header -->

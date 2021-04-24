@@ -14,7 +14,7 @@
                     <a class="next" @click="img1 = !img1">&#10095;</a>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa beatae nisi ullam distinctio laboriosam labore veritatis. Quidem aliquid distinctio nobis. Ab eveniet iusto inventore maiores doloribus facilis dolorem, nobis dolores deleniti sequi repellat quae distinctio cupiditate ratione perferendis quisquam iure labore atque optio! Deserunt assumenda quaerat, aliquid accusamus magnam ex, quasi consequatur illo laborum, nostrum aut sit? Nemo, architecto a. Hic, optio autem consequatur modi rem dicta repellat tempore eos?</p>
+            <p>Votre exploration commence à la gare de Charleroi Sud. Vous quittez le décor industriel pour rapidement dévorer des paysages verdoyants, sauvages, pittoresques et de grands bois, là où le silence règne en maître. <br><br> Pâturages, champs de culture, bosquets, vallées encaissées, petits vallons, ainsi que de charmants villages seront vos compagnons de route.<br><br> Sur votre parcours, vous traverserez notamment les bocages de la fagne hennuyère, la forêt domaniale de Sivry-Ranc, le parc Naturel du Viroin-Hermeton, ainsi qu’une ancienne ligne de chemin de fer, transformée récemment en itinéraire cycliste en pleine nature.<br><br> Vous longerez la rivière «Molignée», et traverserez la vallée de La Meuse, à la lisière de la France. En passant par le lac de Bambois, endroit enchanteur où il fait bon se ressourcer et observer la faune ornithologique.<br><br> Cerise sur le gâteau, si vous le souhaitez, vous pourrez emprunter le train panoramique qui longe le parcours et faire la course avec les draisines que longe le Ravel.</p>
         </div>
         <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic omnis alias, dolorem reprehenderit sit officiis totam? Ipsa assumenda a magnam laudantium veritatis neque ratione modi. Numquam minima quidem quasi natus exercitationem ut officia debitis, delectus deleniti ullam maxime, facilis ex optio aperiam at error impedit doloremque, cum dicta omnis! Et qui vero animi in repellat numquam nemo. Explicabo, atque, soluta, nostrum praesentium perferendis voluptate labore blanditiis voluptatem dolorem voluptatibus alias autem quidem. Quae provident veniam unde ipsam aut.</p>
@@ -22,7 +22,7 @@
                 <img src="/images/5.auberge_de_l_Abbaye.jpg" alt="" v-show="img2">
                 <img src="/images/1.gare_charleroi.jpg" alt="" v-show="!img2">
                 <div class="caption">
-                    <h3>Blade</h3>
+                    <h3>Balade</h3>
                 </div>
                 <div class="carousel-control">
                     <a class="prev" @click="img2 = !img2">&#10094;</a>

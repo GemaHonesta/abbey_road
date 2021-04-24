@@ -84,7 +84,7 @@
             </div>
         </div>
         <div class="submit-btn">
-            <router-link :to="{name: 'Payment'}">
+            <router-link :to="{name: 'PaymentPage'}">
                 <a>Achat</a>
             </router-link>
         </div>
