@@ -1,7 +1,7 @@
 <template>
 <div>
     <div v-for="slide in images" :key="slide">
-        <img height="200" width="auto" :src="slide" loading="lazy" />
+        <img height="auto" width="210" :src="slide" loading="lazy" />
     </div>
     <div class="grid-container">
         <img width="20" src="/images/map/bed.svg"/>   
