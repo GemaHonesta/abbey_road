@@ -1,3 +1,5 @@
+import '@/assets/scss/styles.scss';
+
 // page de point d'entrée:
 import Vue from 'vue';
 
