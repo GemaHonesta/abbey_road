@@ -16,10 +16,7 @@ Vue.component('marker-popup', markerpopup)
 Vue.config.productionTip = false
 
 new Vue({
-  store,
-  render: h => h(App)
-}).$mount('#app')
-
-
-
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')
