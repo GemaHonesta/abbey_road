@@ -144,20 +144,32 @@ export default {
             }).then(response =>{
               var data = response.data;
               data.forEach(e => {
-                axios({
-                  method: 'get',
-                  url:"http://router.project-osrm.org/route/v1/driving/" + position.coords.longitude + "," + position.coords.latitude + ";" +e["lon"] + "," + e["lat"] + "?overview=false&steps=true"
-                }).then(r =>{
+                this.getRout(
+                  position.coords.longitude,
+                  position.coords.latitude,
+                  e["lon"],
+                  e["lat"]
+                ).then(r =>{
                   var route = r.data["routes"][0];
-                  console.log(route);
+                  searchResult.innerHTML += `
+                  <div id="${e['lat']},${e['lon']}">
+                    <p>
+                      ${(e['display_name'])} <br />
+                      ${e['lat']},${e['lon']} <br />
+                      ${(route["duration"] /(60*60)).toFixed(2)} Hours <br />
+                      ${(route["distance"] /1000).toFixed(2)} km
+                    </p>
+                    </div>
+                    <hr />
+                  `
                   searchResult.className = "searchResult"
-                  searchResult.innerHTML += "<div>"
-                  searchResult.innerHTML += "<p>" + e["display_name"] + "<br />" + e["lat"] + "," + e["lon"] + "<br />"+(route["duration"] /(60*60)).toFixed(2)+" Hours<br />" +(route["distance"] /1000).toFixed(2)+" km</p>";
-                  searchResult.innerHTML += "</div>"
                 });
               })
             })
           }
+        }, () => {
+          searchResult.innerHTML = "User Location is needed for this function"
+          searchResult.className = "searchResult"
         }
       )
     }
@@ -172,6 +184,37 @@ export default {
         zoom: 9, //zoom
         speed: 1.5 //vitesse du zoom
       })
+    },
+    async displayRoute(
+      lat1,
+      long1,
+      lat2,
+      long2
+      ){
+        this.getRout(
+         lat1,
+          long1,
+          lat2,
+          long2,
+          true
+        ).then(r =>{
+          var route = r.data["routes"][0];
+          var searchResult = document.getElementById("searchResult")
+          searchResult.innerHTML = ''
+          console.log(route);
+        });
+      },
+    async getRout(
+      lat1,
+      long1,
+      lat2,
+      long2,
+      withSteps = false
+    ){
+      return axios({
+        method: 'get',
+        url:`https://routing.openstreetmap.de/routed-bike/route/v1/driving/${long1},${lat1};${long2},${lat2}?overview=false&steps=${withSteps}`
+      });
     }
   }
 };
